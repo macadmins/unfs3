@@ -30,6 +30,7 @@ $ docker run --rm -d -p --privileged -p 111:111/udp -p 111:111/tcp -p 2049:2049/
 **Adding an exports entry**
 
 `$ echo "/some/other/path (ro|rw)" >> /host/path/exports`
+
 `$ docker stop unfs3 && docker start unfs3`
 
 Or when using CoreOS:
