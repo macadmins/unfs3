@@ -21,7 +21,7 @@ Prepare an _exports_ file on the host:
 $ echo "/to/share (ro|rw)" >> /host/path/exports
 `
 
-Run Docker and mount either a host-based volume or a volume from another container at the guest path specified in the exports file:
+Run Docker and mount any number of host-based volumes or volumes from other containers at the guest path(s) specified in the exports file:
 
 `
 $ docker run --rm -d -p --privileged -p 111:111/udp -p 111:111/tcp -p 2049:2049/udp -p 2049:2049/tcp (-v /host/path:/to/share _ --volumes-from <container>) -v /host/path/exports:/etc/exports --name unfs3 macadmins/unfs3
