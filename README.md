@@ -18,7 +18,7 @@ The current UNFS3 implementation is fairly simple and uses a statically linked _
 Prepare an _exports_ file on the host:
 
 `
-$ echo "/to/share (ro|rw)"" >> /host/path/exports
+$ echo "/to/share (ro|rw)" >> /host/path/exports
 `
 
 Run Docker and mount either a host-based volume or a volume from another container at the guest path specified in the exports file:
