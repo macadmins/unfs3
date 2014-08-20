@@ -33,6 +33,6 @@ $ docker run --rm -d -p --privileged -p 111:111/udp -p 111:111/tcp -p 2049:2049/
 
 `$ docker stop unfs3 && docker start unfs3`
 
-Or when using CoreOS:
+Or if using CoreOS:
 
 `$ systemctl restart unfs3`
