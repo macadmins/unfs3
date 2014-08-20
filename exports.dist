@@ -1,0 +1,2 @@
+# Modify to your needs, add other NFS options as needed (http://manpages.ubuntu.com/manpages/natty/man8/unfsd.8.html)
+#/path/to/share    (ro)
